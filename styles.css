@@ -1,3 +1,12 @@
+/* =========================================================
+   Zion’s Braid Bar - styles.css
+   Palette:
+   Royal Purple: #5A2D82
+   Silver:       #C0C0C0
+   White:        #FFFFFF
+   Black accent: #111111
+   ========================================================= */
+
 /* Global */
 * {
   box-sizing: border-box;
@@ -11,9 +20,13 @@ body {
   line-height: 1.6;
 }
 
+/* Links */
 a {
-  color: #5A2D82;
   text-decoration: none;
+}
+
+a:visited {
+  color: #5A2D82;
 }
 
 /* Header */
@@ -29,10 +42,11 @@ header h1 {
   margin: 0;
   font-size: 2.2rem;
   font-weight: 800;
+  letter-spacing: 0.3px;
 }
 
 header p {
-  margin-top: 8px;
+  margin: 8px 0 0;
   font-style: italic;
 }
 
@@ -59,6 +73,8 @@ nav a {
   border-radius: 10px;
   color: #FFFFFF;
   font-weight: 700;
+
+  /* transition requirement */
   transition: background-color 0.3s ease;
 }
 
@@ -67,13 +83,14 @@ nav a:hover {
   color: #111111;
 }
 
-/* Main Content */
+/* Main layout */
 main {
   max-width: 960px;
   margin: 24px auto;
   padding: 0 16px;
 }
 
+/* Content cards */
 section {
   margin: 18px 0;
   padding: 18px;
@@ -82,6 +99,8 @@ section {
   border-left: 8px solid #5A2D82;
   border-radius: 14px;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+
+  /* transition requirement */
   transition: transform 0.25s ease;
 }
 
@@ -95,47 +114,47 @@ section h2 {
 }
 
 /* Table */
-.projects-table {
+.styles-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 12px;
 }
 
-.projects-table caption {
+.styles-table caption {
   font-weight: bold;
   text-align: left;
   padding-bottom: 8px;
   color: #5A2D82;
 }
 
-.projects-table th,
-.projects-table td {
+.styles-table th,
+.styles-table td {
   border: 1px solid #C0C0C0;
   padding: 12px;
   text-align: left;
   vertical-align: top;
 }
 
-.projects-table thead th {
+.styles-table thead th {
   background-color: #111111;
   color: #FFFFFF;
 }
 
-.projects-table tfoot td {
+.styles-table tfoot td {
   background-color: #f4f4f4;
   font-style: italic;
 }
 
-/* Column styling */
-.projects-table .col-1 {
+/* colgroup requirement: color first + third columns */
+.styles-table .col-1 {
   background-color: rgba(90, 45, 130, 0.08);
 }
 
-.projects-table .col-3 {
+.styles-table .col-3 {
   background-color: rgba(192, 192, 192, 0.25);
 }
 
-/* Image placeholder */
+/* Placeholder box */
 .img-placeholder {
   width: 160px;
   height: 90px;
