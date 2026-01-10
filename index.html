@@ -1,150 +1,94 @@
-/* Global */
-* {
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Zion’s Braid Bar — Crowned with Care. Professional braiding and beauty services.">
+  <meta name="keywords" content="braids, hair salon, beauty, Zion's Braid Bar">
+  <meta name="author" content="Darrien Raines Boswell">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zion’s Braid Bar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #111111;
-  background: linear-gradient(135deg, #ffffff 0%, #f4f4f4 40%, #ffffff 100%);
-  line-height: 1.6;
-}
+<body>
 
-a {
-  color: #5A2D82;
-  text-decoration: none;
-}
+<header>
+  <h1>Zion’s Braid Bar</h1>
+  <p><em>Crowned with Care</em></p>
+</header>
 
-/* Header */
-header {
-  text-align: center;
-  padding: 28px 16px;
-  background: #5A2D82;
-  color: #FFFFFF;
-  border-bottom: 6px solid #C0C0C0;
-}
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-header h1 {
-  margin: 0;
-  font-size: 2.2rem;
-  font-weight: 800;
-}
+<main>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Zion’s Braid Bar is a beauty salon dedicated to professional braiding styles that celebrate culture, creativity, and confidence.</p>
+  </section>
 
-header p {
-  margin-top: 8px;
-  font-style: italic;
-}
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We specialize in box braids, knotless braids, cornrows, twists, and custom protective styles tailored just for you.</p>
+  </section>
 
-/* Navigation */
-nav {
-  background: #111111;
-  padding: 10px 16px;
-  border-bottom: 3px solid #C0C0C0;
-}
+  <section id="projects">
+    <h2>Projects</h2>
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-}
+    <table class="projects-table">
+      <caption>Sample Projects</caption>
 
-nav a {
-  padding: 10px 14px;
-  border-radius: 10px;
-  color: #FFFFFF;
-  font-weight: 700;
-  transition: background-color 0.3s ease;
-}
+      <colgroup>
+        <col class="col-1">
+        <col>
+        <col class="col-3">
+      </colgroup>
 
-nav a:hover {
-  background-color: #C0C0C0;
-  color: #111111;
-}
+      <thead>
+        <tr>
+          <th>Project Name</th>
+          <th>Description</th>
+          <th>Image</th>
+        </tr>
+      </thead>
 
-/* Main */
-main {
-  max-width: 960px;
-  margin: 24px auto;
-  padding: 0 16px;
-}
+      <tbody>
+        <tr>
+          <td>Service Menu Page</td>
+          <td>A structured page displaying available braiding services and pricing.</td>
+          <td><div class="img-placeholder"></div></td>
+        </tr>
 
-section {
-  margin: 18px 0;
-  padding: 18px;
-  background: #FFFFFF;
-  border: 2px solid #C0C0C0;
-  border-left: 8px solid #5A2D82;
-  border-radius: 14px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
-  transition: transform 0.25s ease;
-}
+        <tr>
+          <td>Gallery Layout</td>
+          <td>A visual layout designed to showcase completed braid styles.</td>
+          <td><div class="img-placeholder"></div></td>
+        </tr>
+      </tbody>
 
-section:hover {
-  transform: scale(1.02);
-}
+      <tfoot>
+        <tr>
+          <td colspan="3">Additional projects will be added in the future.</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
 
-section h2 {
-  margin-top: 0;
-  color: #5A2D82;
-}
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: info@zionsbraidbar.com<br>
+       Phone: (555) 123-4567</p>
+  </section>
+</main>
 
-/* Table */
-.projects-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 12px;
-}
+<footer>
+  <p>&copy; 2025 Darrien Raines Boswell</p>
+</footer>
 
-.projects-table caption {
-  font-weight: bold;
-  text-align: left;
-  padding-bottom: 8px;
-  color: #5A2D82;
-}
-
-.projects-table th,
-.projects-table td {
-  border: 1px solid #C0C0C0;
-  padding: 12px;
-  text-align: left;
-}
-
-.projects-table thead th {
-  background-color: #111111;
-  color: #FFFFFF;
-}
-
-.projects-table tfoot td {
-  background-color: #f4f4f4;
-  font-style: italic;
-}
-
-.projects-table .col-1 {
-  background-color: rgba(90, 45, 130, 0.08);
-}
-
-.projects-table .col-3 {
-  background-color: rgba(192, 192, 192, 0.25);
-}
-
-.img-placeholder {
-  width: 160px;
-  height: 90px;
-  border: 2px dashed #C0C0C0;
-  border-radius: 10px;
-}
-
-/* Footer */
-footer {
-  margin-top: 28px;
-  text-align: center;
-  font-size: 0.9rem;
-  padding: 16px;
-  background: #111111;
-  color: #FFFFFF;
-  border-top: 3px solid #C0C0C0;
-}
+</body>
+</html>
