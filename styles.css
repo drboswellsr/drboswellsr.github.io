@@ -1,141 +1,150 @@
-/* =========================================================
-   Zion’s Braid Bar - styles.css
-   Color Palette:
-   Royal Purple: #5A2D82
-   Silver:       #C0C0C0
-   White:        #FFFFFF
-   Black accent: #111111
-   ========================================================= */
-
-/* --- Global / Reset-ish --- */
+/* Global */
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif; /* web-safe */
+  font-family: Arial, Helvetica, sans-serif;
   color: #111111;
-
-  /* Background gradient (soft, readable) */
   background: linear-gradient(135deg, #ffffff 0%, #f4f4f4 40%, #ffffff 100%);
   line-height: 1.6;
 }
 
-/* Make links look clean */
 a {
   color: #5A2D82;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* --- Header --- */
+/* Header */
 header {
-  text-align: center;              /* center header text */
-  padding: 28px 16px;              /* padding requirement */
-  background: #5A2D82;             /* royal purple */
-  color: #FFFFFF;                  /* white */
-  border-bottom: 6px solid #C0C0C0;/* silver accent line */
+  text-align: center;
+  padding: 28px 16px;
+  background: #5A2D82;
+  color: #FFFFFF;
+  border-bottom: 6px solid #C0C0C0;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.2rem;               /* font size */
-  font-weight: 800;                /* font weight */
-  letter-spacing: 0.5px;
+  font-size: 2.2rem;
+  font-weight: 800;
 }
 
 header p {
-  margin: 8px 0 0;
-  font-size: 1.05rem;
+  margin-top: 8px;
   font-style: italic;
-  color: #FFFFFF;
 }
 
-/* --- Navigation Menu --- */
+/* Navigation */
 nav {
-  background: #111111;             /* black accent */
+  background: #111111;
   padding: 10px 16px;
   border-bottom: 3px solid #C0C0C0;
 }
 
 nav ul {
-  list-style: none;                /* remove bullets */
+  list-style: none;
   margin: 0;
   padding: 0;
-
-  display: flex;                   /* horizontal menu */
+  display: flex;
   justify-content: center;
   gap: 14px;
-  flex-wrap: wrap;
-}
-
-nav li {
-  margin: 0;
-  padding: 0;
 }
 
 nav a {
-  display: inline-block;
   padding: 10px 14px;
   border-radius: 10px;
-
   color: #FFFFFF;
   font-weight: 700;
-  background: transparent;
-  border: 2px solid transparent;
-
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
-/* Hover effect */
 nav a:hover {
-  background: #C0C0C0;             /* silver hover */
-  color: #111111;                  /* black text */
-  border-color: #5A2D82;           /* purple outline */
-  text-decoration: none;
+  background-color: #C0C0C0;
+  color: #111111;
 }
 
-/* --- Main Content Area --- */
+/* Main */
 main {
   max-width: 960px;
   margin: 24px auto;
   padding: 0 16px;
 }
 
-/* Style each section as a “card” */
 section {
-  margin: 18px 0;                  /* margin requirement */
-  padding: 18px 18px;              /* padding requirement */
+  margin: 18px 0;
+  padding: 18px;
   background: #FFFFFF;
-  border: 2px solid #C0C0C0;       /* silver border */
-  border-left: 8px solid #5A2D82;  /* purple accent */
+  border: 2px solid #C0C0C0;
+  border-left: 8px solid #5A2D82;
   border-radius: 14px;
-
-  /* box shadow requirement */
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease;
+}
+
+section:hover {
+  transform: scale(1.02);
 }
 
 section h2 {
   margin-top: 0;
   color: #5A2D82;
-  font-size: 1.4rem;
 }
 
-/* --- Footer --- */
+/* Table */
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.projects-table caption {
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 8px;
+  color: #5A2D82;
+}
+
+.projects-table th,
+.projects-table td {
+  border: 1px solid #C0C0C0;
+  padding: 12px;
+  text-align: left;
+}
+
+.projects-table thead th {
+  background-color: #111111;
+  color: #FFFFFF;
+}
+
+.projects-table tfoot td {
+  background-color: #f4f4f4;
+  font-style: italic;
+}
+
+.projects-table .col-1 {
+  background-color: rgba(90, 45, 130, 0.08);
+}
+
+.projects-table .col-3 {
+  background-color: rgba(192, 192, 192, 0.25);
+}
+
+.img-placeholder {
+  width: 160px;
+  height: 90px;
+  border: 2px dashed #C0C0C0;
+  border-radius: 10px;
+}
+
+/* Footer */
 footer {
   margin-top: 28px;
-  text-align: center;              /* center */
-  font-size: 0.9rem;               /* smaller font */
+  text-align: center;
+  font-size: 0.9rem;
   padding: 16px;
-  background: #111111;             /* contrasting bg */
+  background: #111111;
   color: #FFFFFF;
   border-top: 3px solid #C0C0C0;
-}
-
-footer p {
-  margin: 0;
 }
