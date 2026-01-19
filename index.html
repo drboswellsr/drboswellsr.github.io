@@ -13,13 +13,13 @@
 
 <body>
 
-<header>
+<header class="site-header">
   <h1>Zion’s Braid Bar</h1>
-  <p><em>Crowned with Care</em></p>
+  <p class="tagline"><em>Crowned with Care</em></p>
 </header>
 
-<nav>
-  <ul>
+<nav class="site-nav" aria-label="Main navigation">
+  <ul class="nav-list">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#featured-styles">Featured Styles</a></li>
@@ -27,18 +27,24 @@
   </ul>
 </nav>
 
-<main>
-  <section id="about">
+<main class="main-layout">
+  <section id="about" class="card">
     <h2>About Us</h2>
-    <p>Zion’s Braid Bar is a beauty salon dedicated to professional braiding styles that celebrate culture, creativity, and confidence.</p>
+    <p>
+      Zion’s Braid Bar is a beauty salon dedicated to professional braiding styles
+      that celebrate culture, creativity, and confidence.
+    </p>
   </section>
 
-  <section id="services">
+  <section id="services" class="card">
     <h2>Our Services</h2>
-    <p>We specialize in box braids, knotless braids, cornrows, twists, and custom protective styles tailored just for you.</p>
+    <p>
+      We specialize in box braids, knotless braids, cornrows, twists, and custom
+      protective styles tailored just for you.
+    </p>
   </section>
 
-  <section id="featured-styles">
+  <section id="featured-styles" class="card">
     <h2>Featured Styles</h2>
 
     <table class="styles-table">
@@ -61,14 +67,20 @@
       <tbody>
         <tr>
           <td>Knotless Braids</td>
-          <td>A lightweight protective style that offers a natural look with minimal tension, providing comfort, versatility, and long-lasting wear.</td>
-          <td><div class="img-placeholder"></div></td>
+          <td>
+            A lightweight protective style that offers a natural look with minimal
+            tension, providing comfort, versatility, and long-lasting wear.
+          </td>
+          <td><div class="img-placeholder" aria-label="Preview placeholder"></div></td>
         </tr>
 
         <tr>
           <td>Boho Braids</td>
-          <td>A modern, textured style that combines classic braids with loose, flowing strands for a soft, effortless, and stylish finish.</td>
-          <td><div class="img-placeholder"></div></td>
+          <td>
+            A modern, textured style that combines classic braids with loose,
+            flowing strands for a soft, effortless, and stylish finish.
+          </td>
+          <td><div class="img-placeholder" aria-label="Preview placeholder"></div></td>
         </tr>
       </tbody>
 
@@ -80,14 +92,42 @@
     </table>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="card">
     <h2>Contact</h2>
-    <p>Email: info@zionsbraidbar.com<br>Phone: (555) 123-4567</p>
+    <p class="contact-info">
+      Email: <a href="mailto:info@zionsbraidbar.com">info@zionsbraidbar.com</a><br>
+      Phone: <a href="tel:15551234567">(555) 123-4567</a>
+    </p>
+
+    <!-- REQUIRED CONTACT FORM -->
+    <form class="contact-form" action="#" method="post">
+      <div class="form-row">
+        <label for="senderName">Name</label>
+        <input type="text" id="senderName" name="senderName" required>
+      </div>
+
+      <div class="form-row">
+        <label for="senderEmail">Email</label>
+        <input type="email" id="senderEmail" name="senderEmail" required>
+      </div>
+
+      <div class="form-row">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject">
+      </div>
+
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
   </section>
 </main>
 
-<footer>
-  <p>&copy; 2025 Zion’s Braid Bar. All rights reserved.</p>
+<footer class="site-footer">
+  <p>&copy; 2026 Zion’s Braid Bar. All rights reserved.</p>
 </footer>
 
 </body>
