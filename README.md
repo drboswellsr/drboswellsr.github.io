@@ -20,3 +20,4 @@ The site highlights a clean, modern aesthetic suitable for a beauty brand and in
 - Visual Studio Code  
 
 ## Repository Structure
+<img width="1907" height="1065" alt="Screenshot 2026-01-21 at 8 47 49 PM" src="https://github.com/user-attachments/assets/226a3ad5-0801-421a-9c95-1cb4b4912717" />
